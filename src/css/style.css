@@ -356,6 +356,38 @@ a {
   text-decoration: none;
 }
 
+.red {
+  color: #ff4f5b;
+}
+
+.blue {
+  color: #3cc0dc;
+}
+
+.black {
+  color: #130f0f;
+}
+
+.gray {
+  color: #181818;
+}
+
+.light {
+  color: #d4d4d4;
+}
+
+.green {
+  color: #a2c90a;
+}
+
+.orange {
+  color: #ffab00;
+}
+
+.purple {
+  color: #7c00b9;
+}
+
 .header {
   position: fixed;
   background-color: #130f0f;
@@ -398,6 +430,26 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.header .logo__sub {
+  color: #a2c90a;
+  font-family: 'Squada One', cursive;
+  font-size: 12px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 10px;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.header .logo__sub:hover {
+  -webkit-transform: rotate(320deg);
+          transform: rotate(320deg);
 }
 
 .header .logo__container {
@@ -497,30 +549,6 @@ a {
           align-items: center;
 }
 
-.nav__el {
-  font-family: 'Scada', sans-serif;
-  font-weight: normal;
-  font-size: 14px;
-  margin-left: 5px;
-  margin-right: 5px;
-}
-
-.nav__el1 {
-  color: #3cc0dc;
-}
-
-.nav__el2 {
-  color: #f3ff4f;
-}
-
-.nav__el3 {
-  color: #ff4f5b;
-}
-
-.nav__el4 {
-  color: #ff00d4;
-}
-
 .nav__sochial {
   margin-right: 150px;
 }
@@ -544,9 +572,7 @@ a {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
-  width: 400px;
-  border-left: 2px solid #ffab00;
-  z-index: 1;
+  width: 320px;
 }
 
 .menu {
@@ -563,9 +589,64 @@ a {
   width: 100%;
 }
 
+.menu__name {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 60px;
+  color: #d4d4d4;
+  text-transform: uppercase;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  color: #ff4f5b;
+}
+
 .menu__item {
   color: #d4d4d4;
-  font-family: 'Squada One', cursive;
+  font-family: 'Roboto', sans-serif;
   font-size: 18px;
+  list-style: none;
+  padding-left: 30px;
+  line-height: 2.5;
+}
+
+.menu__item:hover {
+  color: #3cc0dc;
+}
+
+.menu__item:hover ul {
+  display: block;
+}
+
+.menu__item ul {
+  display: none;
+}
+
+.menu__headen {
+  margin-top: -45px;
+  margin-left: -270px;
+  background-color: #181818;
+  border-radius: 5px;
+  border: 2px solid #ffab00;
+  padding-left: 5px;
+  list-style: none;
+  position: absolute;
+  min-width: 240px;
+  color: #d4d4d4;
+  -webkit-box-shadow: 1px 1px 1px 1px rgba(255, 171, 0, 0.2);
+          box-shadow: 1px 1px 1px 1px rgba(255, 171, 0, 0.2);
+}
+
+.element {
+  margin-left: 20px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.element:hover {
+  text-shadow: 2px 2px 2px #d4d4d4, 0 0 1px #d4d4d4;
 }
 /*# sourceMappingURL=style.css.map */

@@ -30,33 +30,43 @@
         color: $light
         
         align-items: center
+        &__sub
+            color: $green
+            font-family: 'Squada One', cursive
+            font-size: 12px
+            display: flex
+            align-items: center
+            margin-top: 10px
+            transition: 1s
+            &:hover
+                transform: rotate(320deg) 
         &__container
             height: 50px
             margin-left: 50px
             display: flex
         
         &__el1
-            color: #a2c90a
+            color: $green
             transition: 1s
             &:hover
                transform: rotate(320deg) 
         &__el2
-            color: #3cc0dc
+            color: $blue
             transition: 0.7s
             &:hover
                transform: rotate(-180deg) 
         &__el3
-            color: #ff4f5b 
+            color: $red
             transition: 2s
             &:hover
                transform: rotate(480deg) 
         &__el4
-            color: #ffab00
+            color: $orange
             transition: 0.9s
             &:hover
                transform: rotate(-90deg) 
         &__el5
-            color: #7c00b9
+            color: $purple
             transition: 0.3s
             &:hover
                transform: rotate(55deg) 
@@ -76,19 +86,6 @@
     &__menu
         display: flex
         align-items: center
-    &__el
-        font-family: 'Scada', sans-serif
-        font-weight: normal
-        font-size: 14px
-        margin-left: 5px
-        margin-right: 5px
-    &__el1
-        color: #3cc0dc
-    &__el2
-        color: #f3ff4f 
-    &__el3
-        color: #ff4f5b 
-    &__el4
-        color: #ff00d4 
+    
     &__sochial
         margin-right: 150px

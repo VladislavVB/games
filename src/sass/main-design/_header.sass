@@ -3,6 +3,26 @@
     background-color: $black
     height: 50px
     width: 100%
+    &__input
+        background-color: $gray
+        border: 2px solid #3cc0dc
+        padding: 4px
+        border-radius: 5px
+        font-family: 'Squada One', cursive
+        width: 550px
+        color: $light
+    &__button
+        background-color: transparent
+        border-radius: 5px
+        border: 2px solid #ffab00
+        color: #ffab00
+        font-family: 'Squada One', cursive
+        padding: 4px
+        width: 70px
+        &:hover
+            cursor: pointer
+            box-shadow: 2px 2px 2px 2px rgba(#ffab00, 0.2)
+            
     .logo
         
         /*font-family: 'Press Start 2P', cursive*/
@@ -45,6 +65,11 @@
             font-family: 'Squada One', cursive
             text-transform: uppercase
             font-size: 30px
+.nav
+    &__form
+        display: flex
+        align-items: center
+        
 .nav
     display: flex
     justify-content: space-between

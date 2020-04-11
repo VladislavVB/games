@@ -1,61 +1,25 @@
 .head
-    height: 100vh
-    background-color: $gray
+    height: 70vh
+    position: relative
+    background:  $black url('../img/money.jpg')
     display: flex
-    justify-content: space-between
-    &__menu
-        background-color: $black
-        display: flex
-        justify-content: flex-end
-        width: 320px
-        
-        z-index: 
-.menu
-    display: flex
-    flex-direction: column
-    justify-content: flex-start
-    width: 100%
-    &__name
-        display: flex
-        justify-content: center
-        margin-top: 60px
-        color: $light
-        text-transform: uppercase
-        font-family: 'Roboto', sans-serif
-        font-weight: 500
-        color: $red
-    &__item
-        color: $light
-        font-family: 'Roboto', sans-serif
-        font-size: 18px
-        list-style: none  
-        padding-left: 30px
-        line-height: 2.5
-        &:hover
-            color: $blue
-            
-            ul
-                display: block
-        ul
-            display: none
-    &__headen
-        margin-top: -45px
-        margin-left: -270px
-        background-color: $gray
-        border-radius: 5px
-        border: 2px solid $orange
-        padding-left: 5px
-        list-style: none   
+    justify-content: center
+    &::before
+        content: ''
         position: absolute
-        min-width: 240px  
-        color: $light
-        box-shadow: 1px 1px 1px 1px rgba($orange, 0.2)
-.element
-    margin-left: 20px
-    transition: 0.3s
-    &:hover
-        
-        text-shadow: 2px 2px 2px $light, 0 0 1px $light
-        
-        
+        width: 100%
+        height: 100%
+        background-color: rgba($black, 0.7 )
+    &__text
+        max-width: 600px
+        position: absolute
+        color: $white
+        display: flex
+        flex-direction: column
+        text-align: center
+        top: 50%                       
+        transform: translate(0, -50%)
+        font-family: 'Source Code Pro', monospace
+        font-size: 18px
+        line-height: 1.5
         

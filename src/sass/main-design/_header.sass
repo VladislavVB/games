@@ -1,91 +1,35 @@
 .header
-    position: fixed
-    background-color: $black
-    height: 50px
-    width: 100%
-    &__input
-        background-color: $gray
-        border: 2px solid #3cc0dc
-        padding: 4px
-        border-radius: 5px
-        font-family: 'Squada One', cursive
-        width: 550px
-        color: $light
-    &__button
-        background-color: transparent
-        border-radius: 5px
-        border: 2px solid #ffab00
-        color: #ffab00
-        font-family: 'Squada One', cursive
-        padding: 4px
-        width: 70px
-        &:hover
-            cursor: pointer
-            box-shadow: 2px 2px 2px 2px rgba(#ffab00, 0.2)
-            
-    .logo
-        
-        /*font-family: 'Press Start 2P', cursive*/
-        display: flex
-        color: $light
-        
-        align-items: center
-        &__sub
-            color: $green
-            font-family: 'Squada One', cursive
-            font-size: 12px
-            display: flex
-            align-items: center
-            margin-top: 10px
-            transition: 1s
-            &:hover
-                transform: rotate(320deg) 
-        &__container
-            height: 50px
-            margin-left: 50px
-            display: flex
-        
-        &__el1
-            color: $green
-            transition: 1s
-            &:hover
-               transform: rotate(320deg) 
-        &__el2
-            color: $blue
-            transition: 0.7s
-            &:hover
-               transform: rotate(-180deg) 
-        &__el3
-            color: $red
-            transition: 2s
-            &:hover
-               transform: rotate(480deg) 
-        &__el4
-            color: $orange
-            transition: 0.9s
-            &:hover
-               transform: rotate(-90deg) 
-        &__el5
-            color: $purple
-            transition: 0.3s
-            &:hover
-               transform: rotate(55deg) 
-        &__el
-            margin-right: 5px
-            font-family: 'Squada One', cursive
-            text-transform: uppercase
-            font-size: 30px
-.nav
-    &__form
-        display: flex
-        align-items: center
-        
+    display: flex
+    align-items: center
+    min-height: 85px
+    background-color: $gray
+    font-family: 'PT Sans', sans-serif
+.logo
+    display: flex
+    align-items: center
+    &__text
+        margin-left: 10px
+        font-family: 'PT Sans', sans-serif
+        font-weight: 700
+        color: $white
+        font-size: 30px
 .nav
     display: flex
     justify-content: space-between
-    &__menu
+    &__text
         display: flex
+        justify-content: center
         align-items: center
-    
-    &__sochial
-        margin-right: 150px
+        margin-right: 15%
+    &__item
+        font-family: 'Source Code Pro', monospace
+        font-weight: 700
+        font-size: 22px
+        color: $white
+        margin-left: 10px
+        margin-right: 10px
+        border-bottom: 2px solid $white
+        transition-duration: 0.5s
+        &:hover
+            border-bottom: 2px solid $red
+        

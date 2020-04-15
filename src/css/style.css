@@ -554,4 +554,50 @@ img {
 .gray {
   background-color: #3d3d3d;
 }
+
+@media screen and (max-width: 992px) {
+  .content__text {
+    margin-left: 10px;
+  }
+}
+
+@media screen and (max-width: 644px) {
+  .col-50 {
+    width: 100%;
+  }
+  .content__img {
+    display: block;
+    margin-bottom: 20px;
+  }
+  .content__game {
+    min-height: 650px;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .content__text {
+    margin-left: 0;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .nav__text {
+    margin-right: 0;
+  }
+  .logo__text {
+    display: none;
+  }
+  .head__text {
+    font-size: 14px;
+    max-width: 300px;
+  }
+  .policy {
+    font-size: 12px;
+  }
+  .content__img {
+    height: 200px;
+  }
+  .content__game {
+    min-height: 550px;
+  }
+}
 /*# sourceMappingURL=style.css.map */
